@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <img
+        class="bg-img"
+        src="./assets/images/pattern-bg.png"
+        alt="pattern-bg"
+      />
+      <h1 class="header">IP Address Tracker</h1>
+      <div class="input-gp">
+        <input
+          id="inputField"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        />
+        <div class="search" id="btnSearch">
+          <img src="./assets/images/icon-arrow.svg" alt="go-search" />
+        </div>
+      </div>
+      <div class="data-output">
+        <div class="data-gp">
+          <p class="data-label">IP Address</p>
+          <p class="data" id="ip">8.8.8.8</p>
+        </div>
+        <div class="data-gp">
+          <p class="data-label">Location</p>
+          <p class="data" id="loc">California</p>
+        </div>
+        <div class="data-gp">
+          <p class="data-label">Timezone</p>
+          <p class="data" id="tz">UTC -07:00</p>
+        </div>
+        <div class="data-gp">
+          <p class="data-label">ISP</p>
+          <p class="data" id="isp">Google LLC</p>
+        </div>
+        <i class="fa fa-chevron-up" id="downUp"></i>
+      </div>
+    </div>
+    <div class="map">
+      <div id="map"></div>
+    </div>
+    <div id="myToast" class="mytoast">
+      <span class="txt-toast" id="toastMessage">Loading</span>
+      <img
+        src="./assets/images/icon-close.svg"
+        alt="icon-close"
+        class="btn-close"
+        id="toastClose"
+      />
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
