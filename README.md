@@ -6,6 +6,7 @@
 
  - [Fetch API](https://www.npmjs.com/package/node-fetch "Node Fetch API")
  - [Geolocation API](https://geo.ipify.org/ "Geolocation API")  
+ - [Netlify Functions](https://www.netlify.com/products/functions/ "Netlify Functions")
  - [Leaflet JS for Map](https://leafletjs.com/ "LeafletJS for map")
 
 ### Features
